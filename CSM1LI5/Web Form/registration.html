@@ -11,6 +11,13 @@
         <!-- <a href="index.html">Home</a> | -->
     <!--TODO 29: Similarly, create a hyperlink for the login page.-->
     <!--TODO 30: Similarly, create hyperlink for the categories page.-->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="login.html">Login</a>
+        <a href="categories.html">Categories</a>
+        <a href="registration.html">Registration</a>
+    </nav>
+
 
          <!--
         TODO 2: Immediately below the <body> tag, enter the <form> tag to 
@@ -29,27 +36,7 @@
         TODO 4: Similarly, define a text input element for UserID and its 
         associated label. Set the id attribute of the text field as "userId"
         -->
-            
-            <form action="#" method="post">
-                <p>
-                    <label for="name">Name</label><br/>
-                    <input type="text" id="name" placeholder="name">
-                </p>
-                <p>
-                    <label for="userId">User ID</label><br/>
-                    <input type="text" id="userId" placeholder="UserID">
-                </p>
-            </form>  
-         
 
-        <p>
-        <!--TODO 11: Below the text field for the user's name, insert two <input> elements with type="radio". Set the name attribute of the both radio buttons to "gender"-->
-        <!--TODO 12: For the first radio element, set the id and value as "Male".-->
-        <!--TODO 13: for the second radio element, set the id and value to "Female"-->
-        <!--TODO 14: Place the label and textarea elements inside a paragraph tag.-->
-        </p>
-        
-        
         <!--
         TODO 5: Similarly, define a password input element for user’s password 
         and its associated label. Set the id attribute of the password field 
@@ -68,37 +55,86 @@
         <!--TODO 9: Define a corresponding label for the textarea, 
         with its "for" attribute set to "address"-->
         <!--TODO 10: Place the label and textarea elements inside a paragraph tag.-->
-    
-        <p>
-            <h4>Shopping Interests</h4>
-            <!--TODO 15: Below the text area element for the user's address 
-            for correspondence, insert three <input> elements with type="checkbox".--> 
-            <!--TODO 16: For the first checkbox, set the id as "ele", name and 
-            value as "electronics".-->
-            <!--TODO 17: for the second checkbox, set the id as "fashion", and 
-            name and value to "Fashion"-->
-            <!--TODO 18: for the third checkbox, set the id as "books", and name 
-            and value to "Books".-->
-            <!--TODO 19: Define a label accompanying each of the checkboxes with 
-            its "for" attribute to the id of the checkbox, and a suitable text 
-            as the caption.-->
-        </p>
-        <p>
-        <!--TODO 20: add a <select> element in the form (below the row of checkboxes). 
-            Set the id and name attribute of <select> element to "category". -->
-        <!--TODO 21: Inside the <select> tag, add two <option> tags.-->
-        <!--TODO 22: The "value" attribute of the first option is to be set to "Premium"-->
-        <!--TODO 23: The "value" attribute of the second option is to be set to "Regular".-->
-        <!--TODO 24: Define a label accompanying the <select> element  with its 
-            "for" attribute to "category" , and "Select the Category" as the caption.-->
-        </p> 
-        <p>
-        <!--TODO 25: add an <input> element just before the </form> tag with its type 
-        being "submit" and also the value as "submit". -->
-        </p> 
-        <!--TODO 31: Just before the </body> tag, add the <footer> element. 
-            Use the HTML entity "&copy;" to render the copyright symbol, 
-            add "All rights reserved" along with it inside the <footer> element. -->                     
+            
+            <form action="#" method="post">
+                <p>
+                    <label for="name">Name</label><br/>
+                    <input type="text" id="name" placeholder="name">
+                    <p>
+                        <!--TODO 11: Below the text field for the user's name, insert two <input> elements with type="radio". Set the name attribute of the both radio buttons to "gender"-->
+                        <!--TODO 12: For the first radio element, set the id and value as "Male".-->
+                        <!--TODO 13: for the second radio element, set the id and value to "Female"-->
+                        <!--TODO 14: Place the label and textarea elements inside a paragraph tag.-->
+                        <input type="radio" name="gender" id="Male" value="Male">
+                        <label for="address">Male</label><br/>
+                        
+                        <input type="radio" name="gender" id="Female" value="Female">
+                        <label for="address">Female</label><br/>
+                    </p>
+                </p>
+                <p>
+                    <label for="userId">User ID</label><br/>
+                    <input type="text" id="userId" placeholder="UserID">
+                </p>
+                <p>
+                    <label for="password">Password</label><br/>
+                    <input type="password" id="password">
+                </p>
+                <p>
+                    <label for="email">Email</Email><br/>
+                    <input type="email" id="email" placeholder="name@gmail.com">
+                </p>
+                <p>
+                    <label for="address">Address</label><br/>
+                    <textarea id="address" name="address" rows="5" cols="30"></textarea>
+                </p>
+                <p>
+                    <h4>Shopping Interests</h4>
+                    <!--TODO 15: Below the text area element for the user's address 
+                    for correspondence, insert three <input> elements with type="checkbox".--> 
+                    <!--TODO 16: For the first checkbox, set the id as "ele", name and 
+                    value as "electronics".-->
+                    <!--TODO 17: for the second checkbox, set the id as "fashion", and 
+                    name and value to "Fashion"-->
+                    <!--TODO 18: for the third checkbox, set the id as "books", and name 
+                    and value to "Books".-->
+                    <!--TODO 19: Define a label accompanying each of the checkboxes with 
+                    its "for" attribute to the id of the checkbox, and a suitable text 
+                    as the caption.-->
+                    <input type="checkbox" id="ele" name="electronics" value="electronics">
+                    <label for="ele">Electronics</label>
+                    <input type="checkbox" id="fashion" name="Fashion" value="Fashion">
+                    <label for="fashion">Fashion</label>
+                    <input type="checkbox" id="books" name="Books" value="Books">
+                    <label  for="books">Books</label>
+                </p>
+                <p>
+                <!--TODO 20: add a <select> element in the form (below the row of checkboxes). 
+                    Set the id and name attribute of <select> element to "category". -->
+                <!--TODO 21: Inside the <select> tag, add two <option> tags.-->
+                <!--TODO 22: The "value" attribute of the first option is to be set to "Premium"-->
+                <!--TODO 23: The "value" attribute of the second option is to be set to "Regular".-->
+                <!--TODO 24: Define a label accompanying the <select> element  with its 
+                    "for" attribute to "category" , and "Select the Category" as the caption.-->
+                    <label for="category">Select the Category</label><br/>
+                    <select id="category" name="category">
+                        <option value="Premium">Premium</option>
+                        <option value="Regular">Regular</option>
+                    </select>
+                </p>
+                <p>
+                <!--TODO 25: add an <input> element just before the </form> tag with its type 
+                being "submit" and also the value as "submit". -->
+                    <input type="submit" value="submit">
+                </p> 
+            </form>
+            
+            <!--TODO 31: Just before the \body tag, add the footer element. --> 
+            <!--Use the HTML entity "&copy;" to render the copyright symbol, --> 
+            <!--add "All rights reserved" along with it inside the <footer> element. -->  
+            <footer>
+                <p>&copy; All rights reserved.</p>
+            </footer>
 </body>
 </html>
 
