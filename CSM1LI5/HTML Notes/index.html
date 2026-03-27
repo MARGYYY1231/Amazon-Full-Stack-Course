@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Webpage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Hello World</h1>
+        
+        <!-- Unordered List: -->
+         <h2>Unordered List Example</h2>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+
+        <!-- Ordered List: -->
+         <h2>Ordered List Example</h2>
+        <ol>
+            <li>First</li>
+            <li>Second</li>
+            <li>Third</li>
+        </ol>
+
+        <!-- Nested List: -->
+         <h2>Nested List Example</h2>
+        <ol>
+            <li>Parent Item 1
+                <ul>
+                    <li>Child Item 1</li>
+                    <li>Child Item 2</li>
+                </ul>
+            </li>
+            <li>Parent Item 2
+                <ul>
+                    <li>Child Item 3</li>
+                    <li>Child Item 4</li>
+                </ul>
+            </li>
+        </ol>
+
+        <!-- Anchor Tag Example: -->
+        <h2>Anchor Tag Example</h2>
+
+        <!-- External links if you want to open in a new tab, use target="_blank" in the anchor tag. -->
+        <p>Visit <a href="https://www.google.com" target="_blank">Google</a> for more information.</p>
+        
+        <!-- ID -->
+        <h2 id="section1">Section 1</h2>
+        <p>This is the first section of the webpage.</p>
+
+        <a href="#section1">Go to Section 1</a>
+
+        <!-- IMG -->
+         <h2>IMG</h2>
+         <!-- alt is alternative text for the image if image cannot be laoded -->
+          <!-- title displays text as a description or additional information when hovering over the image-->
+         <img src="#" class="img-responsive" alt="Image" title="image" width="400" height="400">
+         
+
+         <!-- Table -->
+          <!-- th - header, tr- table row and td - table data -->
+           <!-- thead seperates headers from the data making it more structured -->
+          <!-- tfoot is good for diplaying summaries -->
+           <h2>Table</h2>
+          <table border="1">
+            <caption>Weekly Class Schedule</caption>
+            <thead>
+                <tr>
+                    <th rowspan="2">Day</th>
+                    <th colspan="2">Time</th>
+                    <th>Subject</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Monday</td>
+                    <td>Maths</td>
+                    <td>Science</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Tuesday</td>
+                    <td>Maths</td>
+                    <td>Science</td>
+                </tr>
+                <tr>
+                    <td>History</td>
+                    <td>Economics</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>    
+                    <td colspan="3">Note: Schedule is subject to change.</td>
+                </tr>
+            </tfoot>
+          </table>
+
+          <!-- FORM -->
+           <!-- Action defines the URL location where the forms colected data should be sent when submitted -->
+            <!-- Method defines which HTTP method to send the data with usually GET or POST -->
+             <!-- enctype: All the characters are encrypted before sending to the server. ​It converts a whitespace into a plus symbol and each special character into its hex value.  -->
+              <!-- The for attribute in the label tag should match the id attribute of the associated input ​element. -->
+           <form action="#" method="POST">
+                <label for="input_id">Label Text</label>
+                <input type="text" id="input_id">
+
+                <label for="pass">Password</label>
+                <input type="password" id="pass">
+
+                <label for="email">Email</label>
+                <input type="email" id="email">
+
+                <label for="num">Number</label>
+                <input type="number" id="num">
+
+                <label for="check">Checkbox</label>
+                <input type="checkbox" id="check">
+
+                <label for="radio">Radio</label>
+                <input type="radio" id="radio">
+
+                <label for="textArea">Text Area</label>
+                <textarea id="textArea" name="address" rows="5" cols="30"></textarea>
+
+                <select id="choice" name="choice">
+                    <option value="first">First Value</option>
+                    <option value="second">Second Value</option>
+                    <option value="third">Third Value</option>
+                </select>
+
+                <input type="submit" value="submit">
+           </form>
+
+           <!-- <aside></aside> -->
+            <!-- &copy; is the copyright symbol -->
+             <!-- <footer, header, section -->
+    </div>
+</body>
+</html>
